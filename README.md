@@ -138,4 +138,19 @@ where country='Germany'
 ![изображение](https://user-images.githubusercontent.com/122611882/221118890-e6f1d3b0-072d-4c22-952c-45aa5b6cd286.png)
 
 
+```sql
+select contact_name, fax
+from customers
+where fax is not null
+order by contact_name asc
+```
 
+![изображение](https://user-images.githubusercontent.com/122611882/221119885-7e6e557b-2406-49b7-8598-418128b60a02.png)
+
+
+```sql
+select *
+from employees
+```
+
+![изображение](https://user-images.githubusercontent.com/122611882/221120429-280885d2-ac0b-4360-bca7-3544c595e9ca.png)
