@@ -154,3 +154,48 @@ from employees
 ```
 
 ![изображение](https://user-images.githubusercontent.com/122611882/221120429-280885d2-ac0b-4360-bca7-3544c595e9ca.png)
+
+
+```sql
+select
+    employee_id as ishchi_id_si,
+    last_name as familia,
+    first_name as ism,
+    title as lavozim,
+    title_of_courtesy as xushmuomalalik_unvoni,
+    birth_date as tugilgan_sana,
+    hire_date as ishga_qabul_qilingan_date,
+    address as manzil,
+    city as shahar,
+    region as mintaqa
+from employees
+```
+
+![изображение](https://user-images.githubusercontent.com/122611882/221130892-73ba4700-9017-430a-a41f-a1d9c166748f.png)
+
+
+```sql
+select first_name, title_of_courtesy
+from employees
+where title_of_courtesy='Mr.'
+order by first_name asc
+```
+
+![изображение](https://user-images.githubusercontent.com/122611882/221132285-a7be5094-69e9-45ce-9a27-e20b9387262a.png)
+
+```sql
+select count(*)
+from employees
+where title='Sales Representative'
+```
+
+![изображение](https://user-images.githubusercontent.com/122611882/221132763-9eeb79fe-f47b-4e38-be0f-3d1219ac7e6e.png)
+
+
+```sql
+select *
+from employees
+where hire_date between '1994-01-01' and '1994-12-31'
+```
+
+![изображение](https://user-images.githubusercontent.com/122611882/221133660-fd2eae0f-cd7e-4d00-8f8c-9d5da4e25605.png)
