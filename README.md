@@ -199,3 +199,56 @@ where hire_date between '1994-01-01' and '1994-12-31'
 ```
 
 ![изображение](https://user-images.githubusercontent.com/122611882/221133660-fd2eae0f-cd7e-4d00-8f8c-9d5da4e25605.png)
+
+
+```sql
+select  region,first_name, last_name, title, city,home_phone
+from employees
+where region is not null
+order by first_name asc 
+```
+
+![изображение](https://user-images.githubusercontent.com/122611882/221135279-f2f309d1-c822-41a4-ad51-1a908da91bb7.png)
+
+
+```sql
+select  *
+from orders
+where customer_id='VINET'
+```
+![изображение](https://user-images.githubusercontent.com/122611882/221136060-2bbb6420-bd29-42dd-a72a-9c5ea98c5354.png)
+
+```sql
+select  *
+from orders
+where order_date between '1996-01-01' and '1996-12-31'
+```
+
+![изображение](https://user-images.githubusercontent.com/122611882/221137373-ffda2c62-6ca9-4d01-b566-56c968187e3e.png)
+
+
+```sql
+select  *
+from orders
+where ship_region is not null
+```
+
+![изображение](https://user-images.githubusercontent.com/122611882/221137759-f2c53189-1600-435c-aac7-02d46f906cef.png)
+
+
+```sql
+select  *
+from orders
+where order_id between 10300 and 10400
+```
+
+![изображение](https://user-images.githubusercontent.com/122611882/221138120-a5e501ce-a2a4-4512-ada2-cc0614878276.png)
+
+
+```sql
+select  sum(unit_price)
+from order_details
+```
+
+![изображение](https://user-images.githubusercontent.com/122611882/221138791-228c6c9c-85f4-4eda-ba8a-3f015dca61a2.png)
+
