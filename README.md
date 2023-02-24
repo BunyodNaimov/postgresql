@@ -102,3 +102,40 @@ where city='London'
 ![изображение](https://user-images.githubusercontent.com/122611882/221112694-b9854ed1-5a4a-45fc-b639-2edae498c1ec.png)
 
 
+```sql
+select *
+from customers
+where region is null
+```
+
+![изображение](https://user-images.githubusercontent.com/122611882/221117515-9f74a26b-e087-4e78-af4b-3213e1f719d6.png)
+
+
+```sql
+select *
+from customers
+where region is not null
+```
+
+![изображение](https://user-images.githubusercontent.com/122611882/221118176-d26e8770-ec0d-4ce0-a321-aa088952eef3.png)
+
+
+```sql
+select customer_id,company_name,contact_name,region,country
+from customers
+where country='Germany'
+```
+
+![изображение](https://user-images.githubusercontent.com/122611882/221118526-e9b6e293-bc9c-437d-888d-2177ac285b8d.png)
+
+
+```sql
+select count(*)
+from customers
+where country='Germany'
+```
+
+![изображение](https://user-images.githubusercontent.com/122611882/221118890-e6f1d3b0-072d-4c22-952c-45aa5b6cd286.png)
+
+
+
